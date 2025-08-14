@@ -87,7 +87,7 @@ export function Leaderboard({ userScore, userName }: LeaderboardProps) {
 
   if (loading) {
     return (
-      <div className="min-h-screen gradient-fruit-bg flex flex-col items-center justify-center p-6">
+      <div className="min-h-screen gradient-game-bg flex flex-col items-center justify-center p-6">
         <div className="text-center">
           <div className="animate-spin w-12 h-12 border-4 border-primary border-t-transparent rounded-full mb-4"></div>
           <p className="text-muted-foreground">Loading leaderboard...</p>
@@ -100,7 +100,7 @@ export function Leaderboard({ userScore, userName }: LeaderboardProps) {
   const topEntries = leaderboard.slice(0, 10)
 
   return (
-    <div className="min-h-screen gradient-fruit-bg p-6">
+    <div className="min-h-screen gradient-game-bg p-6">
       <div className="max-w-md mx-auto">
         {/* Header */}
         <div className="text-center mb-6">
