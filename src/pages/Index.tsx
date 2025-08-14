@@ -53,8 +53,8 @@ const Index = () => {
             <div className="bg-card/50 backdrop-blur-sm rounded-xl p-4 flex items-center gap-4">
               <div className="text-2xl">🏆</div>
               <div>
-                <h3 className="font-semibold text-card-foreground">Win Free Hampers</h3>
-                <p className="text-sm text-muted-foreground">Top the leaderboard by 3 PM</p>
+                <h3 className="font-semibold text-card-foreground">Win Bunchit Coupon</h3>
+                <p className="text-sm text-muted-foreground">₹500 coupon for top players</p>
               </div>
             </div>
           </div>
@@ -63,10 +63,10 @@ const Index = () => {
           <div className="gradient-accent rounded-xl p-6 text-center shadow-special">
             <div className="flex items-center justify-center gap-2 mb-2">
               <Gift className="w-6 h-6 text-accent-foreground" />
-              <h3 className="text-lg font-bold text-accent-foreground">Free Hamper Prize!</h3>
+              <h3 className="text-lg font-bold text-accent-foreground">Bunchit Coupon of ₹500!</h3>
             </div>
             <p className="text-accent-foreground font-semibold">
-              Top the leaderboard by 3 PM and win a FREE hamper from Bunchit!
+              Top the leaderboard by 3 PM and win a ₹500 coupon from Bunchit!
             </p>
           </div>
         </div>

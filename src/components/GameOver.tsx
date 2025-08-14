@@ -36,7 +36,7 @@ export function GameOver({ score, onCheckLeaderboard }: GameOverProps) {
         <div className="gradient-accent rounded-xl p-6 mb-6 text-center shadow-special">
           <div className="flex items-center justify-center gap-2 mb-3">
             <Trophy className="w-6 h-6 text-accent-foreground" />
-            <h3 className="text-lg font-bold text-accent-foreground">Win a FREE HAMPER!</h3>
+            <h3 className="text-lg font-bold text-accent-foreground">Win a Bunchit coupon of ₹500!</h3>
           </div>
           
           <p className="text-accent-foreground font-semibold mb-2">

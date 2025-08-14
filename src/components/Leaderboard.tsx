@@ -150,7 +150,7 @@ export function Leaderboard({ userScore, userName }: LeaderboardProps) {
         {/* Prize Banner */}
         <div className="gradient-accent rounded-xl p-6 text-center shadow-special mb-6">
           <h3 className="text-lg font-bold text-accent-foreground mb-2">
-            🎁 Prize Winner by 3 PM gets FREE HAMPER!
+            🎁 Prize Winner by 3 PM gets Bunchit coupon of ₹500!
           </h3>
           <p className="text-sm text-accent-foreground/80">
             Keep playing to improve your rank!

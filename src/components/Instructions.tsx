@@ -76,7 +76,7 @@ export function Instructions({ onStartGame }: InstructionsProps) {
         {/* Reward Info */}
         <div className="bg-accent/10 border border-accent/20 rounded-xl p-4 mb-6">
           <p className="text-center font-bold text-accent-foreground">
-            🏆 Top the leaderboard by 3 PM to win a FREE HAMPER!
+            🏆 Top the leaderboard by 3 PM to win a Bunchit coupon of ₹500!
           </p>
           <p className="text-xs text-center text-muted-foreground mt-2">
             *If you have already picked your order, we will waive off your order value (orders below ₹500 will be waived off) *T&C
