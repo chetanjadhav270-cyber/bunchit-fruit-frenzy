@@ -7,11 +7,11 @@ interface InstructionsProps {
 
 export function Instructions({ onStartGame }: InstructionsProps) {
   return (
-    <div className="min-h-screen gradient-game-bg flex flex-col items-center justify-center p-6">
+    <div className="min-h-screen gradient-fruit-bg flex flex-col items-center justify-center p-6">
       <div className="max-w-md w-full">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-primary mb-2">🧺 Bunchit Catch</h1>
+          <h1 className="text-4xl font-bold text-primary mb-2">🪣 Bunchit Catch</h1>
           <p className="text-lg text-muted-foreground">Catch the falling fruits!</p>
         </div>
 

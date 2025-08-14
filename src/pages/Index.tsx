@@ -4,10 +4,10 @@ import { Play, QrCode, Gift } from "lucide-react"
 
 const Index = () => {
   return (
-    <div className="min-h-screen gradient-game-bg">
+    <div className="min-h-screen gradient-fruit-bg">
       {/* Navigation Header */}
       <header className="p-6 text-center">
-        <h1 className="text-3xl font-bold text-primary mb-2">🧺 Bunchit Catch</h1>
+        <h1 className="text-3xl font-bold text-primary mb-2">🪣 Bunchit Catch</h1>
         <p className="text-muted-foreground">The ultimate fruit-catching game!</p>
       </header>
 

@@ -8,7 +8,7 @@ interface GameOverProps {
 
 export function GameOver({ score, onCheckLeaderboard }: GameOverProps) {
   return (
-    <div className="min-h-screen gradient-game-bg flex flex-col items-center justify-center p-6">
+    <div className="min-h-screen gradient-fruit-bg flex flex-col items-center justify-center p-6">
       <div className="max-w-md w-full">
         {/* Header */}
         <div className="text-center mb-8">
