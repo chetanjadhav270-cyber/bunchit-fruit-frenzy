@@ -184,11 +184,23 @@ export function GameScreen({ onGameEnd }: GameScreenProps) {
               y: item.y
             })
             setTimeout(() => setScorePopup(prev => ({ ...prev, show: false })), 600)
+          } else if (isColliding && item.isDangerous) {
+            // Caught a dangerous item - reduce score
+            const penalty = -10
+            setScore(prev => Math.max(0, prev + penalty)) // Don't let score go below 0
+            
+            // Show penalty popup
+            setScorePopup({
+              show: true,
+              points: penalty,
+              x: item.x + ITEM_SIZE / 2,
+              y: item.y
+            })
+            setTimeout(() => setScorePopup(prev => ({ ...prev, show: false })), 600)
           } else if (!isColliding) {
             // Item continues falling
             remainingItems.push(item)
           }
-          // If collision with dangerous item, just remove it (no score change)
         })
 
         return remainingItems
@@ -322,13 +334,15 @@ export function GameScreen({ onGameEnd }: GameScreenProps) {
         {/* Score Popup */}
         {scorePopup.show && (
           <div
-            className="absolute z-30 text-2xl font-bold text-primary score-pop pointer-events-none"
+            className={`absolute z-30 text-2xl font-bold score-pop pointer-events-none ${
+              scorePopup.points > 0 ? 'text-primary' : 'text-destructive'
+            }`}
             style={{
               left: scorePopup.x,
               top: scorePopup.y
             }}
           >
-            +{scorePopup.points}
+            {scorePopup.points > 0 ? '+' : ''}{scorePopup.points}
           </div>
         )}
       </div>
