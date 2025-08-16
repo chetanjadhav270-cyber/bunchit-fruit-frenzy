@@ -11,25 +11,32 @@ export function GameOver({ score, onCheckLeaderboard }: GameOverProps) {
     <div className="min-h-screen gradient-game-bg flex flex-col items-center justify-center p-6">
       <div className="max-w-md w-full">
         {/* Header */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-6">
           <div className="text-6xl mb-4">🎉</div>
           <h1 className="text-3xl font-bold text-primary mb-2">Game Over!</h1>
           <p className="text-lg text-muted-foreground">Great job catching those fruits!</p>
         </div>
 
-        {/* Score Card */}
-        <div className="bg-card rounded-2xl p-8 shadow-card mb-8 text-center">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <Star className="w-6 h-6 text-accent" />
-            <h2 className="text-xl font-bold text-card-foreground">Final Score</h2>
-            <Star className="w-6 h-6 text-accent" />
+        {/* Discount Info - Moved to top */}
+        <div className="bg-secondary/20 border border-secondary/30 rounded-xl p-4 mb-6 text-center">
+          <p className="text-secondary-foreground font-semibold">
+            You have earned ₹10 discount - claim it at the store*
+          </p>
+        </div>
+
+        {/* Score Card - Smaller */}
+        <div className="bg-card rounded-2xl p-4 shadow-card mb-6 text-center">
+          <div className="flex items-center justify-center gap-2 mb-2">
+            <Star className="w-5 h-5 text-accent" />
+            <h2 className="text-lg font-bold text-card-foreground">Final Score</h2>
+            <Star className="w-5 h-5 text-accent" />
           </div>
           
-          <div className="text-5xl font-bold text-primary mb-4 relative z-10">
+          <div className="text-3xl font-bold text-primary mb-2 relative z-10">
             {score}
           </div>
           
-          <p className="text-muted-foreground">Points earned</p>
+          <p className="text-sm text-muted-foreground">Points earned</p>
         </div>
 
         {/* Prize Info */}
@@ -49,12 +56,6 @@ export function GameOver({ score, onCheckLeaderboard }: GameOverProps) {
           </div>
         </div>
 
-        {/* Discount Info */}
-        <div className="bg-secondary/20 border border-secondary/30 rounded-xl p-4 mb-4 text-center">
-          <p className="text-secondary-foreground font-semibold">
-            You have earned ₹10 discount - claim it at the store*
-          </p>
-        </div>
 
         {/* Terms */}
         <div className="bg-muted/50 rounded-lg p-4 mb-6">

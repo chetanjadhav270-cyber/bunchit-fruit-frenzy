@@ -29,12 +29,18 @@ export function LeaderboardForm({ score, onSubmit }: LeaderboardFormProps) {
   return (
     <div className="min-h-screen gradient-game-bg flex flex-col items-center justify-center p-6">
       <div className="max-w-md w-full">
+        {/* Discount Banner - Prominent */}
+        <div className="gradient-accent rounded-xl p-4 text-center shadow-special mb-6 border-2 border-accent/30">
+          <div className="text-2xl mb-2">🎉</div>
+          <h2 className="text-lg font-bold text-accent-foreground mb-1">Congratulations!</h2>
+          <p className="text-accent-foreground font-semibold">You have been awarded a discount of ₹10 which you can claim at the stall!</p>
+        </div>
+
         {/* Header */}
         <div className="text-center mb-8">
           <div className="text-4xl mb-4">📋</div>
           <h1 className="text-2xl font-bold text-primary mb-2">Enter Your Details</h1>
           <p className="text-muted-foreground">Join the leaderboard with your score of {score} points!</p>
-          <p className="text-secondary font-semibold mt-2">You have been awarded a discount of ₹10 which you can claim at the stall.</p>
         </div>
 
         {/* Form Card */}

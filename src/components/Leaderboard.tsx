@@ -108,20 +108,9 @@ export function Leaderboard({ userScore, userName }: LeaderboardProps) {
           <p className="text-muted-foreground">See how you rank against other players!</p>
         </div>
 
-        {/* Order Button */}
-        <GameButton 
-          variant="secondary" 
-          size="lg" 
-          className="w-full mb-6"
-          onClick={handleOrderNow}
-        >
-          <ExternalLink className="w-5 h-5 mr-2" />
-          Order Now to Avail Discount at the Counter
-        </GameButton>
-
-        {/* Current User Highlight */}
+        {/* Current User Highlight - Moved to top */}
         {currentUserEntry && (
-          <div className="bg-card rounded-xl p-4 shadow-card mb-6 border-2 border-primary/20">
+          <div className="bg-card rounded-xl p-4 shadow-card mb-4 border-2 border-primary/20">
             <div className="text-center">
               <p className="text-sm text-muted-foreground mb-1">Your Position</p>
               <div className="flex items-center justify-center gap-3">
@@ -132,6 +121,17 @@ export function Leaderboard({ userScore, userName }: LeaderboardProps) {
             </div>
           </div>
         )}
+
+        {/* Order Button - Below user position */}
+        <GameButton 
+          variant="secondary" 
+          size="lg" 
+          className="w-full mb-6"
+          onClick={handleOrderNow}
+        >
+          <ExternalLink className="w-5 h-5 mr-2" />
+          Order now to claim your discount at the stall
+        </GameButton>
 
         {/* Leaderboard List */}
         <div className="space-y-3 mb-8">
@@ -159,7 +159,7 @@ export function Leaderboard({ userScore, userName }: LeaderboardProps) {
         </div>
 
         {/* Prize Banner */}
-        <div className="gradient-accent rounded-xl p-6 text-center shadow-special">
+        <div className="gradient-accent rounded-xl p-6 text-center shadow-special mb-6">
           <h3 className="text-lg font-bold text-accent-foreground mb-2">
             🎁 Prize Winner by 3 PM gets Bunchit coupon of ₹500!
           </h3>
@@ -168,8 +168,19 @@ export function Leaderboard({ userScore, userName }: LeaderboardProps) {
           </p>
         </div>
 
+        {/* Bottom Order Button */}
+        <GameButton 
+          variant="primary" 
+          size="lg" 
+          className="w-full mb-6"
+          onClick={handleOrderNow}
+        >
+          <ExternalLink className="w-5 h-5 mr-2" />
+          Order Now to Avail Discount at the Counter
+        </GameButton>
+
         {/* Footer */}
-        <div className="text-center mt-6">
+        <div className="text-center">
           <p className="text-xs text-muted-foreground">
             Fresh fruits delivered to your doorstep • bunchit.in
           </p>
