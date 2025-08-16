@@ -271,7 +271,7 @@ export function GameScreen({ onGameEnd }: GameScreenProps) {
         <div className="gradient-primary text-primary-foreground px-4 py-2 rounded-lg font-bold shadow-fruit">
           Score: {score}
         </div>
-        <div className="bg-timer text-destructive-foreground px-4 py-2 rounded-lg font-bold shadow-fruit">
+        <div className="bg-card/90 text-card-foreground px-4 py-2 rounded-lg font-bold shadow-fruit border-2 border-destructive">
           {formatTime(timeLeft)}
         </div>
       </div>
@@ -328,7 +328,12 @@ export function GameScreen({ onGameEnd }: GameScreenProps) {
             height: 60
           }}
         >
-          <div className="text-5xl">🧺</div>
+          <div className="relative text-5xl">
+            🧺
+            <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 text-xs font-bold text-primary bg-card/80 px-1 rounded">
+              BUNCHIT
+            </div>
+          </div>
         </div>
 
         {/* Score Popup */}

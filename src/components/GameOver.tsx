@@ -25,7 +25,7 @@ export function GameOver({ score, onCheckLeaderboard }: GameOverProps) {
             <Star className="w-6 h-6 text-accent" />
           </div>
           
-          <div className="text-5xl font-bold gradient-primary bg-clip-text text-transparent mb-4">
+          <div className="text-5xl font-bold text-primary mb-4 relative z-10">
             {score}
           </div>
           
@@ -47,6 +47,13 @@ export function GameOver({ score, onCheckLeaderboard }: GameOverProps) {
             <Clock className="w-4 h-4" />
             <span>Hurry up! Time is ticking</span>
           </div>
+        </div>
+
+        {/* Discount Info */}
+        <div className="bg-secondary/20 border border-secondary/30 rounded-xl p-4 mb-4 text-center">
+          <p className="text-secondary-foreground font-semibold">
+            You have earned ₹10 discount - claim it at the store*
+          </p>
         </div>
 
         {/* Terms */}

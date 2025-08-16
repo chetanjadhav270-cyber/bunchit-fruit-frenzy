@@ -34,6 +34,7 @@ export function LeaderboardForm({ score, onSubmit }: LeaderboardFormProps) {
           <div className="text-4xl mb-4">📋</div>
           <h1 className="text-2xl font-bold text-primary mb-2">Enter Your Details</h1>
           <p className="text-muted-foreground">Join the leaderboard with your score of {score} points!</p>
+          <p className="text-secondary font-semibold mt-2">You have been awarded a discount of ₹10 which you can claim at the stall.</p>
         </div>
 
         {/* Form Card */}

@@ -108,6 +108,17 @@ export function Leaderboard({ userScore, userName }: LeaderboardProps) {
           <p className="text-muted-foreground">See how you rank against other players!</p>
         </div>
 
+        {/* Order Button */}
+        <GameButton 
+          variant="secondary" 
+          size="lg" 
+          className="w-full mb-6"
+          onClick={handleOrderNow}
+        >
+          <ExternalLink className="w-5 h-5 mr-2" />
+          Order Now to Avail Discount at the Counter
+        </GameButton>
+
         {/* Current User Highlight */}
         {currentUserEntry && (
           <div className="bg-card rounded-xl p-4 shadow-card mb-6 border-2 border-primary/20">
@@ -148,7 +159,7 @@ export function Leaderboard({ userScore, userName }: LeaderboardProps) {
         </div>
 
         {/* Prize Banner */}
-        <div className="gradient-accent rounded-xl p-6 text-center shadow-special mb-6">
+        <div className="gradient-accent rounded-xl p-6 text-center shadow-special">
           <h3 className="text-lg font-bold text-accent-foreground mb-2">
             🎁 Prize Winner by 3 PM gets Bunchit coupon of ₹500!
           </h3>
@@ -156,17 +167,6 @@ export function Leaderboard({ userScore, userName }: LeaderboardProps) {
             Keep playing to improve your rank!
           </p>
         </div>
-
-        {/* Order Button */}
-        <GameButton 
-          variant="secondary" 
-          size="lg" 
-          className="w-full"
-          onClick={handleOrderNow}
-        >
-          <ExternalLink className="w-5 h-5 mr-2" />
-          Order Now on Bunchit
-        </GameButton>
 
         {/* Footer */}
         <div className="text-center mt-6">

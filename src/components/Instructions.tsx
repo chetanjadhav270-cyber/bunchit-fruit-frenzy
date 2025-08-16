@@ -73,8 +73,18 @@ export function Instructions({ onStartGame }: InstructionsProps) {
           </div>
         </div>
 
+        {/* Start Button */}
+        <GameButton 
+          variant="primary" 
+          size="lg" 
+          className="w-full mb-6"
+          onClick={onStartGame}
+        >
+          🚀 Play Now
+        </GameButton>
+
         {/* Reward Info */}
-        <div className="bg-accent/10 border border-accent/20 rounded-xl p-4 mb-6">
+        <div className="bg-accent/10 border border-accent/20 rounded-xl p-4">
           <p className="text-center font-bold text-accent-foreground">
             🏆 Top the leaderboard by 3 PM to win a Bunchit coupon of ₹500!
           </p>
@@ -82,16 +92,6 @@ export function Instructions({ onStartGame }: InstructionsProps) {
             *If you have already picked your order, we will waive off your order value (orders below ₹500 will be waived off) *T&C
           </p>
         </div>
-
-        {/* Start Button */}
-        <GameButton 
-          variant="primary" 
-          size="lg" 
-          className="w-full"
-          onClick={onStartGame}
-        >
-          🚀 Start Game
-        </GameButton>
       </div>
     </div>
   )

@@ -1,6 +1,6 @@
 import { GameButton } from "@/components/ui/game-button"
 import { Link } from "react-router-dom"
-import { Play, QrCode, Gift } from "lucide-react"
+import { Play, QrCode, Gift, FileText } from "lucide-react"
 
 const Index = () => {
   return (
@@ -17,7 +17,8 @@ const Index = () => {
           {/* Welcome Card */}
           <div className="bg-card rounded-2xl p-8 shadow-card text-center mb-8">
             <div className="text-6xl mb-4">🎮</div>
-            <h2 className="text-2xl font-bold text-card-foreground mb-4">Welcome to Bunchit Catch!</h2>
+            <h2 className="text-2xl font-bold text-card-foreground mb-2">Welcome to Bunchit Catch!</h2>
+            <p className="text-lg font-bold text-accent mb-4">Win a Bunchit coupon worth ₹500!</p>
             <p className="text-muted-foreground mb-6">
               Catch falling fruits, avoid obstacles, and compete for amazing prizes!
             </p>
@@ -27,6 +28,12 @@ const Index = () => {
                 <GameButton variant="primary" size="lg" className="w-full">
                   <Play className="w-5 h-5 mr-2" />
                   Start Playing
+                </GameButton>
+              </Link>
+              <Link to="/terms">
+                <GameButton variant="outline" size="lg" className="w-full">
+                  <FileText className="w-5 h-5 mr-2" />
+                  Terms & Conditions
                 </GameButton>
               </Link>
             </div>
