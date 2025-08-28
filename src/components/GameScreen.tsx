@@ -24,7 +24,7 @@ const itemEmojis = {
   banana: '🍌', 
   cherry: '🍒',
   orange: '🍊',
-  stone: '🪨',
+  stone: '⚫',
   rotten: '🤢',
   'special-crate': '📦'
 }
