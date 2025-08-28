@@ -50,8 +50,8 @@ export function Instructions({ onStartGame }: InstructionsProps) {
             {/* Bad Items */}
             <div className="flex items-start gap-3">
               <div className="flex gap-1">
-                <span className="text-lg">🪨</span>
-                <span className="text-lg">🍎‍🟫</span>
+                <span className="text-lg">⚫</span>
+                <span className="text-lg">🤢</span>
               </div>
               <div>
                 <p className="font-semibold text-destructive">Avoid These!</p>
