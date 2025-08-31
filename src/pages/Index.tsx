@@ -21,13 +21,13 @@ const Index = () => {
             <p className="text-lg font-bold text-accent mb-6">Win a Bunchit coupon worth ₹500!</p>
             
             <div className="space-y-4">
-              <Link to="/game">
+              <Link to="/game" className="block w-full">
                 <GameButton variant="primary" size="lg" className="w-full">
                   <Play className="w-5 h-5 mr-2" />
                   Start Playing
                 </GameButton>
               </Link>
-              <Link to="/terms">
+              <Link to="/terms" className="block w-full">
                 <GameButton variant="outline" size="lg" className="w-full">
                   <FileText className="w-5 h-5 mr-2" />
                   Terms & Conditions
